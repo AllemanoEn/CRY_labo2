@@ -1,3 +1,6 @@
+from chiffrement_auth import *
+
+
 def test():
     print("test")
 
