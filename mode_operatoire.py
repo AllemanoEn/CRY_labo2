@@ -94,10 +94,10 @@ key = "VOICILACLESECRETEDE256BITSXXXXXX"
 # Convert the key to bytes
 key = key.encode('utf-8')
 
-IV3chall= "RqawCDqOq1UNEPMfa+bCSQ=="
+IV3chall = "RqawCDqOq1UNEPMfa+bCSQ=="
 IV3chall = base64.b64decode(IV3chall.encode('ascii'))
 
-c3chall= "PoHSZQwQlLE/PtZLyC3S+JbG/lx7PSo2RHabG+h9653lsGRaLLuF372Dh1I82PW5"
+c3chall = "PoHSZQwQlLE/PtZLyC3S+JbG/lx7PSo2RHabG+h9653lsGRaLLuF372Dh1I82PW5"
 c3chall = base64.b64decode(c3chall.encode('ascii'))
 
 print("Message to encrypt: " + m3)

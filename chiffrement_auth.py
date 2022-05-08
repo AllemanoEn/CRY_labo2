@@ -30,7 +30,7 @@ key_enc = ra.read(16)
 key_mac = ra.read(16)
 (iv, ciphertext, tag) = encrypt(message, key_enc, key_mac)
 print(iv)
-iv = Crypto.Util.strxor.strxor(iv, b'\x09\x01' + b'\x00' * 14)
+iv = Crypto.Util.strxor.strxor(iv, b'\x02\x09' + b'\x00' * 14)
 print(iv)
 print(decrypt(iv, ciphertext, tag, key_enc, key_mac))
 
