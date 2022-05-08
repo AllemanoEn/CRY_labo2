@@ -85,25 +85,20 @@ def breakCipher(m3, c3, IV3, IV3chall, c3chall):
 m3 = "Voici le test initial. Est-ce que tout fonctionne correctement ?"
 
 IV3 = "i8ha85lNnD8iHbRi/eKmtQ=="
-base64_bytes = IV3.encode('ascii')
-IV3 = base64.b64decode(base64_bytes)
+IV3 = base64.b64decode(IV3.encode('ascii'))
 
 c3 = "1OVBFmGMKkd5eoUhv9+iWFYosLiRcAVU8pr1XM9vMr5081pzPuu3unIoLdWuYQ83pxyOmY4siHDCF3CLNaMgOQ=="
-base64_bytes = c3.encode('ascii')
-c3 = base64.b64decode(base64_bytes)
+c3 = base64.b64decode(c3.encode('ascii'))
 
 key = "VOICILACLESECRETEDE256BITSXXXXXX"
 # Convert the key to bytes
 key = key.encode('utf-8')
 
 IV3chall= "RqawCDqOq1UNEPMfa+bCSQ=="
-base64_bytes = IV3chall.encode('ascii')
-IV3chall = base64.b64decode(base64_bytes)
+IV3chall = base64.b64decode(IV3chall.encode('ascii'))
 
 c3chall= "PoHSZQwQlLE/PtZLyC3S+JbG/lx7PSo2RHabG+h9653lsGRaLLuF372Dh1I82PW5"
-base64_bytes = c3chall.encode('ascii')
-c3chall = base64.b64decode(base64_bytes)
-
+c3chall = base64.b64decode(c3chall.encode('ascii'))
 
 print("Message to encrypt: " + m3)
 
